@@ -16,3 +16,6 @@
    Route::get('/about','WelcomeController@about');
    Route::get('/contact','WelcomeController@contact');
     
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
